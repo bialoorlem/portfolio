@@ -2,7 +2,21 @@ const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 
-let feedback;
+let feedback = {
+    avatar: '',
+    name: '',
+    location: '',
+    profile: '',
+    blog: '',
+    bio: '',
+    repos: '',
+    followers: '',
+    following: '',
+    stars: '',
+    bgColor: '',
+
+
+};
 
 inquirer
   .prompt({
@@ -10,11 +24,27 @@ inquirer
     name: "username"
   })
   .then(function({ username }) {
-    const queryUrl = `https://api.github.com/users/${username}/`;
+    const queryUrl = `https://api.github.com/users/${username}`;
 
-axios.get(queryUrl+'repos').then(function(response){
-    feedback = response;
-  const repoNames = response.data.length;
+axios.get(queryUrl).then(function(response){
+  const repoNames = response.data.avatar_url;
+
+
+  feedback.avatar=response.data.avatar_url;
+  feedback.name=response.data.login;
+  feedback.location=response.data.location;
+  feedback.profile=response.data.html_url;
+  feedback.blog=response.data.blog;
+  feedback.bio=response.data.bio;
+  feedback.repos=response.data.public_repos;
+  feedback.followers=response.data.followers;
+  feedback.following=response.data.following;
+  feedback.stars=response.data.starred_url;
+//   feedback.bgColor='blue';
+  console.log(feedback);
+
+//look up documentation on inquirer and figure out how to make multiple prompts
+
 
 //   const repoNamesStr = repoNames.join("\n");
 
@@ -26,7 +56,7 @@ axios.get(queryUrl+'repos').then(function(response){
     
 //   })
 
-  console.log(repoNames);
+//   console.log(repoNames+"\n"+response.data.public_repos);
 });
 
 
