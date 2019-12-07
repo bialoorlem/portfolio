@@ -13,10 +13,13 @@ let feedback = {
     followers: '',
     following: '',
     stars: '',
-    bgColor: '',
+    // bgColor: '',
 
 
 };
+
+///Activites 23 and 24 from section 9 for learning how to dynamically generate the HTML onto the website
+
 
 inquirer
   .prompt({
