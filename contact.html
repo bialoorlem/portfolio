@@ -1,22 +1,21 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>About Me</title>
+  <title>Contact</title>
   <!--Used Bootstrap Styling-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
 
 <body>
 
-<!--Header-->
+  <!--Header-->
 
   <header class="row">
     <div class="container">
@@ -49,30 +48,40 @@
       </nav>
       </div>
   </header>
-<!--Body-->
+
+  <!--Body-->
   <div class="container">
-    <h1>About Me</h1>
+    <h1>Contact</h1>
 
     <div>
       <hr class="hr">
     </div>
-    <div class="row">
-      <div class="col-sm-4 ml-5">
-        <img src="assets/elliot.jpg" class="img-fluid" alt="Responsive image"></div>
-      <div class="col-sm-7"><p>I am a young professional, lover of verbal languages, dogs, tech, and the great outdoors. Growing up in a bilingual
-        household, I've always found excitement in learning more verbal languages to communicate with people and help them
-        with anything they may need. When I was introduced to programming and their languages, I was just as amazed and desired
-        to learn as much as possible. A critical thinker, I enjoy being presented with issues that require a solution. In
-        my young developer career, I am ready to provide people with solutions to their problems in business by developing
-        useful websites, apps, and more!</p>
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+
       </div>
-    </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comments</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    </form>
   </div>
-  <!--Footer-->
+<!--Footer-->
+  <!--<br><br><br><br><br><br><br>
+  <footer class="page-footer bg-dark font-small blue">
+    <div class="footer-copyright text-center py-3 text-white">© 2019 Copyright
+    </div>
+  </footer>-->
 <footer class=“footer”>
    © 2019 Copyright
  </footer>
-
 </body>
 
 
