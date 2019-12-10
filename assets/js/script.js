@@ -118,11 +118,15 @@ let html = `<!DOCTYPE html>
     <h1>About Me</h1>
     <p>${feedback.name}</p>
     <img src="${feedback.avatar}">
-    <p>${feedback.name}</p>
-    <p>${feedback.name}</p>
-    <p>${feedback.name}</p>
-    <p>${feedback.name}</p>
-    <p>${feedback.name}</p>
+    <p>${feedback.location}</p>
+    <p>${feedback.profile}</p>
+    <p>${feedback.blog}</p>
+    <p>${feedback.bio}</p>
+    <p>${feedback.repos}</p>
+    <p>${feedback.followers}</p>
+    <p>${feedback.following}</p>
+    <p>${feedback.stars}</p>
+
     <div>
       <hr class="hr">
     </div>
