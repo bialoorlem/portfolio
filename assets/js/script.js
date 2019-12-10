@@ -57,13 +57,11 @@ axios.get(queryUrl).then(function(response){
 //   feedback.bgColor='blue';
   console.log(feedback);
 
-// doc.pipe(fs.createWriteStream('file.pdf')); // write to PDF
-// //doc.pipe(response); // HTTP response
-// doc.text(feedback.avatar);
-// doc.text(feedback.name);
-// // add stuff to PDF here using methods described below...
-// // finalize the PDF and end the stream
-// doc.end();
+//https://www.npmjs.com/package/html-pdf
+
+//Need to update the data points in let html
+
+
 
 let html = `<!DOCTYPE html>
 <html lang="en">
